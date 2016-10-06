@@ -1,0 +1,18 @@
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+ins {
+  background-color: rgba(0, 255, 0, 0.52);
+}
+del {
+  background-color: rgba(255, 0, 0, 0.62);
+  text-decoration: none;
+}
+.fileName {
+  font-weight: bold;
+  font-size: 20px;
+}
+.result {
+  margin: 50px 0 20px;
+}

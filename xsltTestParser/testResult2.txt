@@ -1,0 +1,32 @@
+Test Name:  RunUKPrimarySourcesXsltTests
+Test FullName:  Cobalt.Document.WLN.XsltTests.Xslt.WLNXsltTest.RunUKPrimarySourcesXsltTests
+Test Source:  d:\data\Cobalt Document\Development\WestlawNext\WLNXsltTests\Xslt\WLNXsltTest.cs : line 1489
+Test Outcome: Failed
+Test Duration:  0:00:01.7964928
+
+Result Message: 
+Test method Cobalt.Document.WLN.XsltTests.Xslt.WLNXsltTest.RunUKPrimarySourcesXsltTests threw exception: 
+System.Xml.Xsl.XsltException: 
+
+Dom Compare Results:
+FileName: D:\data\Cobalt Document\Development\WestlawNext\WLNXsltTests\Xslt\OutputData\UKPrimarySources\PLCUK\ComposedPrimarySources.I2f49c89c574211e598dc8b09b4f043e0.xhtml
+Expected output for test 'D:\data\Cobalt Document\Development\WestlawNext\WLNXsltTests\Xslt\OutputData\UKPrimarySources\PLCUK\ComposedPrimarySources.I2f49c89c574211e598dc8b09b4f043e0.xhtml' does not match the actual output: 
+Attribute count is different for node '/div/div/div/div'.
+Expected: '1'
+  Actual: '2'
+Expected XML: '<div id="co_linksToPage"><h2 class="co_printHeading co_paragraph co_borderTop "><a id="co_anchor_Materials"></a>Links to this primary source</h2><ul class="co_assetList"><li class="co_hideState"><a target="_blank" data-link-info="" class="westlawUKLink">Westlaw UK</a></li><li><a target="_blank" href="http://app.westlawchina.com/maf/china/app/document?&amp;src=nr&amp;docguid=i000000000000014f86ff89316c4baade&amp;lang=bi">Westlawchina.com</a></li><li><a target="_blank" href="http://www.justice.gov.uk/courts/procedure-rules/family/parts/part_25#IDANKHIC">http://www.justice.gov.uk</a></li><li><a target="_blank" href="justice://www.justice.gov.uk/courts/procedure-rules/family/parts/part_25#IDA0RU5B">justice://www.justice.gov.uk/courts/procedure-rules/family/parts/part_25#IDA0RU5B</a></li><li><a target="_blank" href="plcus://case/296 F. Supp. 1068 (W.D.N.C. 1969)">plcus://case/296 F. Supp. 1068 (W.D.N.C. 1969)</a></li><li><a target="_blank" href="leggov://null">leggov://null</a></li></ul></div>'
+  Actual XML: '<div id="co_linksToPage" class="doc_division"><a id="co_anchor_Materials"></a><h2 class="co_printHeading doc_headText co_borderTop ">Links to this primary source</h2><ul class="co_assetList"><li class="co_hideState"><a target="_blank" data-link-info="" class="westlawUKLink">Westlaw UK</a></li><li><a target="_blank" href="http://app.westlawchina.com/maf/china/app/document?&amp;src=nr&amp;docguid=i000000000000014f86ff89316c4baade&amp;lang=bi">Westlawchina.com</a></li><li><a target="_blank" href="http://www.justice.gov.uk/courts/procedure-rules/family/parts/part_25#IDANKHIC">http://www.justice.gov.uk</a></li><li><a target="_blank" href="justice://www.justice.gov.uk/courts/procedure-rules/family/parts/part_25#IDA0RU5B">justice://www.justice.gov.uk/courts/procedure-rules/family/parts/part_25#IDA0RU5B</a></li><li><a target="_blank" href="plcus://case/296 F. Supp. 1068 (W.D.N.C. 1969)">plcus://case/296 F. Supp. 1068 (W.D.N.C. 1969)</a></li><li><a target="_blank" href="leggov://null">leggov://null</a></li></ul></div>'
+
+Dom Compare Results:
+FileName: D:\data\Cobalt Document\Development\WestlawNext\WLNXsltTests\Xslt\OutputData\UKPrimarySources\PLCUK\PrimarySources.I67915bab63a911e598dc8b09b4f043e0.xhtml
+Expected output for test 'D:\data\Cobalt Document\Development\WestlawNext\WLNXsltTests\Xslt\OutputData\UKPrimarySources\PLCUK\PrimarySources.I67915bab63a911e598dc8b09b4f043e0.xhtml' does not match the actual output: 
+Attribute count is different for node '/div/div/div/div'.
+Expected: '1'
+  Actual: '2'
+Expected XML: '<div id="co_linksToPage"><h2 class="co_printHeading co_paragraph co_borderTop "><a id="co_anchor_Materials"></a>Links to this primary source</h2><ul class="co_assetList"><li class="co_hideState"><a target="_blank" data-link-info="I36A54E8005B911E582C6DC00FFA2E956" class="westlawUKLink">Westlaw UK</a></li><li><a target="_blank" href="leggov://null">leggov://null</a></li></ul></div>'
+  Actual XML: '<div id="co_linksToPage" class="doc_division"><a id="co_anchor_Materials"></a><h2 class="co_printHeading doc_headText co_borderTop ">Links to this primary source</h2><ul class="co_assetList"><li class="co_hideState"><a target="_blank" data-link-info="I36A54E8005B911E582C6DC00FFA2E956" class="westlawUKLink">Westlaw UK</a></li><li><a target="_blank" href="leggov://null">leggov://null</a></li></ul></div>'
+Result StackTrace:  
+at Cobalt.Document.TestHelpers.XsltTestRunners.XsltIntegrationTestDriver.RunContentTypeIntegrationTest(String docType, IDictionary`2 additionalParameters, IDictionary`2 extensionObjects, Boolean checkDHE, Boolean validateXhtml, String styleSheet, Assembly callingAssembly, Func`2 dateReplaceFunction) in d:\data\Cobalt Document\Development\Document\TestHelpers\XsltTestRunners\XsltIntegrationTestDriver.cs:line 153
+   at Cobalt.Document.TestHelpers.XsltTestRunners.XsltIntegrationTestDriver.RunContentTypeIntegrationTest(String docType, Assembly assembly) in d:\data\Cobalt Document\Development\Document\TestHelpers\XsltTestRunners\XsltIntegrationTestDriver.cs:line 68
+   at Cobalt.Document.WLN.XsltTests.Xslt.WLNXsltTest.RunUKPrimarySourcesXsltTests() in d:\data\Cobalt Document\Development\WestlawNext\WLNXsltTests\Xslt\WLNXsltTest.cs:line 1490
+

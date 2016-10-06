@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="beautify-html.js"></script>
+  <script src="diff.js"></script>
+  <script src="parser.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <textarea name="" id="input" cols="30" rows="3"></textarea>
+  <button id="parse">Parse</button>
+  <button id="toggleDiff">Toggle Diff</button>
+  <div id="output"></div>
+
+  <script>
+  $('#parse').on('click', function() {
+    var data = parse($('#input').val());
+    $('#output').empty();
+    data.compareResults.forEach(function(item) {
+      var el = $('<div class="result">')
+        .append('<span class="toggleCurrent">toggle</span>')
+        .append('<div class="fileName">' + item.name + '</div>')
+        .append(compare(item.expected, item.actual));
+      $('#output').append(el);
+    })
+  })
+  $('#toggleDiff').on('click', function() {
+    $('pre').toggle();
+  })
+  $('body').on('click', '#output .toggleCurrent', function() {
+    $(this).parent().find('pre').toggle();
+  })
+  </script>
+
+</body>
+</html>
